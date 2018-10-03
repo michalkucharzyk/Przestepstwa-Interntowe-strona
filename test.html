@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+<html lang='pl'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <title>Przestępstwa Internetowe->TEST</title>
+	 <meta name="description" content="Przestępstwa komputerowe, Przestępstwa internetowe, jak zapogiegać przestępczości internetowej,Szybki test,Test wiedzy na temat przestępczości, "/>
+    <meta name="keywords" content="test,odpowiedzi,hacker,ochorona,dane,kradzież,hasła,włamania,paragrafy,zabezpiecznia" />  
+    <meta name="author" content="Michał Kucharzyk">
+    <link rel='stylesheet' href='css/style.css'>
+    <script language="JavaScript">
+        function wycena() {
+            var punkty = 0
+            if (document.forms[0].pyt1[0].checked) {
+                punkty += 1
+            }
+            if (document.forms[0].pyt2[2].checked) {
+                punkty += 1
+            }
+            if (document.forms[0].pyt3[2].checked) {
+                punkty += 1
+            }
+            if (document.forms[0].pyt4[1].checked) {
+                punkty += 1
+            }
+            if (document.forms[0].pyt5[0].checked) {
+                punkty += 1
+            }
+
+            if (punkty == 1) {
+                alert("Otrzymałeś " + punkty + " punkt. Maksymalny wynik to 5 punktów.")
+            } else if (punkty == 2 || punkty == 3) {
+                alert("Otrzymałeś " + punkty + " punkty. Maksymalny wynik to 5 punktów.")
+            } else if (punkty == 5) {
+                alert("Doskonale!! Otrzymałeś " + punkty + " punktów. Jest to maksymalna liczba punktów")
+            } else {
+                alert("Otrzymałeś " + punkty + " punktów. Maksymalny wynik to 10 punktów.")
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class='container'>
+
+        <!--Główne logo-->
+        <header>
+            <img src="images/logo1.jpg"id="logotyp" alt="" />
+        </header>
+
+       
+        <!--Moje Menu-->
+        <aside>
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> <div id="start"> START	</div></a></li>
+                    <li><a href="rodzajeprzestepstw.html"><div id="rodzaje"> Rodzaje przestępstw	</div></a></li>
+                    <li><a href="obrona.html"><div id="sposoby"> Sposoby zapobiegania przestępczości	</div></a></li>
+                    <li><a href="kodeks.html"><div id="kary"> Odpowiedzialaność karna</div></a></li>
+                    <li><a href="media.html"><div id="zdjecia"> MultiMedia</div></a></li>
+                    <li><a href="test.html"><div id="wiedza"> Szybki test</div></a></li>
+                    <li><a href="kontakt.html"><div id="kon"> KONTAKT</div></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+      
+        <section id="main">
+            <!--tworzenie testu za pomoca javascript-->
+            <h1>Szybki Test</h1>
+            <hr />
+            <div class="content">
+                <div class="quiz">
+                    <form>
+                        <div class="pytanie">
+                            <span class="pyt">Co to jest przestępczość ?</span><br>
+                            <br />
+                            <input type="radio" name="pyt1"> Zbiór czynów zabronionych ustawowo pod groźbą kary<br>
+
+                            <input type="radio" name="pyt1">Korzystanie, z nieodpowiednich mediów<br>
+                            <input type="radio" name="pyt1">Tworzenia własnego dzieła<br>
+                            <input type="radio" name="pyt1">Sprzedaż online<br>
+                        </div>
+                        <hr />
+                        <div class="pytanie">
+                            <span class="pyt">Najczęstsze przestępstwa w sieci ? </span><br>
+                            <br />
+                            <input type="radio" name="pyt2">Naruszenie praw autorskich<br>
+                            <input type="radio" name="pyt2">Rozpowszechnianie złośliwego oprogramowania<br>
+                            <input type="radio" name="pyt2">Oszustwa z wykorzystaniem mediów<br>
+                            <input type="radio" name="pyt2">Narzędzia hackerkskie<br>
+                        </div>
+                        <hr />
+                        <div class="pytanie">
+                            <span class="pyt">Jakie oprogramowanie zabezpieczające należy posiadać na komputerze ?</span><br>
+                            <br />
+                            <input type="radio" name="pyt3">Gry<br>
+                            <input type="radio" name="pyt3">Edytor plików<br>
+                            <input type="radio" name="pyt3">Program antywirusowy<br>
+                            <input type="radio" name="pyt3">Program do edcyji grafiki<br>
+                        </div>
+                        <hr />
+                        <div class="pytanie">
+                            <span class="pyt">Kto to jest Hacker ?</span><br>
+                            <br />
+                            <input type="radio" name="pyt4">Administrator sieci<br>
+                            <input type="radio" name="pyt4">Osoba łamiąca zabezpieczenia<br>
+                            <input type="radio" name="pyt4">Programista<br>
+                            <input type="radio" name="pyt4">Projektant stron<br>
+                        </div>
+                        <hr />
+                        <div class="pytanie">
+                            <span class="pyt">Z wykorzystaniem jakiego protkołu wykonywać operacje bankowe ?</span><br>
+                            <br/>
+                            <input type="radio" name="pyt5">HTTPS<br>
+                            <input type="radio" name="pyt5">SMTP<br>
+                            <input type="radio" name="pyt5">ICMP<br>
+                            <input type="radio" name="pyt5">ARP<br>
+                        </div>
+                        <hr />
+
+
+                        <input class="btn-danger btn-lg" type="button" value="Zobacz wynik" onClick="wycena()"><br><br>
+                    </form>
+                </div>
+            </div>
+           
+        </section>
+
+        <!-- Stopka -->
+        <footer>
+            <p>Michał Kucharzyk &copy 2017</p>
+        </footer>
+
+    </div>
+   
+</body>
+</html>
